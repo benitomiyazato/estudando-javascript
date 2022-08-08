@@ -42,6 +42,7 @@ body {
   padding: 1rem;
   background: rgb(60, 151, 60);
   border-radius: 8px;
+  gap: 1rem;
 }
 
 .buttons button {
@@ -56,4 +57,10 @@ body {
 .buttons button:hover {
   transform: translate(-2px, -2px);
   transition: 250ms;
+}
+
+@media (max-width: 580px) {
+  .container {
+    max-width: 100%;
+  }
 }
