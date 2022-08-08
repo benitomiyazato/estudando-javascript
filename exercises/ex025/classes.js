@@ -1,8 +1,12 @@
 class Player {
+  static numberOfPlayers = 0;
+
   constructor(name, age, rpgClass) {
     this.name = name;
     this.age = age;
     this.rpgClass = rpgClass;
+
+    Player.numberOfPlayers += 1;
   }
 
   kill() {
@@ -22,3 +26,7 @@ player1.makeFire();
 
 player2.kill();
 player2.makeFire();
+
+console.log(
+  `There are ${Player.numberOfPlayers} players online on this server!`
+);
