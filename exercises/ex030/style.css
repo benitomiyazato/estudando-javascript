@@ -22,7 +22,7 @@ body {
 
 .container {
   background-image: linear-gradient(to bottom, tomato, rgb(228, 68, 68));
-  max-width: 50%;
+  max-width: 75%;
   border-radius: 8px;
 }
 
