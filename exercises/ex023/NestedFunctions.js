@@ -1,5 +1,5 @@
 // nested functions adds security to your code, its similar to private methods in Java.
-
+// they are used in Closures.
 let username = "Fulano";
 let inbox = 3312;
 
