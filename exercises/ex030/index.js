@@ -20,6 +20,7 @@ playButton.onclick = () => {
     const timer = setInterval(() => {
       if (pause) {
         clearInterval(timer);
+        return;
       }
       date.setSeconds(date.getSeconds() + 1);
       displayDate.innerHTML = formatDate(date);
