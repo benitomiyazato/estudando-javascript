@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(161, 202, 91);
+    position: relative;
+}
+
+.player {
+  width: 150px;
+  height: 150px;
+  background: tomato;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+  position: absolute;
+}
