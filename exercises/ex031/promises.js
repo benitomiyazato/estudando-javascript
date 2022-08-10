@@ -16,3 +16,15 @@ const promise = new Promise((resolve, reject) => {
 promise
   .then((value) => console.log(value + " -> logging in the .then() method"))
   .catch((error) => console.log(error));
+
+// the resolve methhod doesnt necessairily need to return anything
+// also, you can pass arguments in a promise
+const promise2 = (timeToWait) =>
+  new Promise((resolve) => {
+    setTimeout(resolve, timeToWait);
+  });
+
+let milliseconds = 5000;
+promise2(milliseconds).then(() =>
+  console.log(`Thanks for waiting! You waited ${milliseconds / 1000}s!`)
+);
