@@ -22,6 +22,6 @@ window.addEventListener("keydown", (event) => {
       player.style.left = x - "px";
       break;
     default:
-      break;
+      throw new "There's no function mapped to this funcionality"();
   }
 });
