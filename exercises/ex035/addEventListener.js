@@ -1,4 +1,7 @@
+const player = document.querySelector(".player");
+
 let x = 0;
+
 let y = 0;
 window.addEventListener("keydown", (event) => {
   switch (event.key) {
@@ -16,9 +19,9 @@ window.addEventListener("keydown", (event) => {
       break;
     case "ArrowLeft":
       x -= 5;
-      player.style.left = x + "px";
+      player.style.left = x - "px";
+      break;
+    default:
       break;
   }
 });
-
-const player = document.querySelector(".player");
